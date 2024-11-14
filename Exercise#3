@@ -1,0 +1,38 @@
+code#3:
+class Person:
+    def __init__(self, name, address, age, phone_number):
+        self.__name = name
+        self.__address = address
+        self.__age = age
+        self.__phone_number = phone_number
+
+    def get_name(self):
+        return self.__name
+    def get_address(self):
+        return self.__address
+    def get_age(self):
+        return self.__age
+    def get_phone_number(self):
+        return self.__phone_number
+
+    def set_name(self, name):
+        self.__name = name
+    def set_address(self, address):
+        self.__address = address
+    def set_age(self, age):
+        self.__age = age
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+
+def main():
+    person1 = Person("Alice Johnson", "123 Maple st, Springfield", 28, "555-1234")
+    person2 = Person("Bob Smith", "456 Van Buren st", 35, "555-5678")
+    person3 = Person("Jacob Ortegah", "789 riverside st", 24, "555-9123")
+
+    for person in (person1, person2, person3):
+       print(f"Name:{person.get_name()}")
+       print(f"Address:{person.get_address()}")
+       print(f"Age:{person.get_age()}")
+       print(f"Phone Number:{person.get_phone_number()}")
+       print()
+main()
